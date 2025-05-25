@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Ahmet Sezgin | Kişisel Web Sitesi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- Başlık ve Navigasyon -->
+    <header id="header">
+        <div class="container">
+            <h1 class="logo">
+                <a href="#home" data-tr="Ahmet Sezgin" data-en="Ahmet Sezgin">Ahmet Sezgin</a>
+            </h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#about" data-tr="Hakkımda" data-en="About">Hakkımda</a></li>
+                    <li><a href="#skills" data-tr="Yetenekler" data-en="Skills">Yetenekler</a></li>
+                    <li><a href="#projects" data-tr="Projeler" data-en="Projects">Projeler</a></li>
+                    <li><a href="#contact" data-tr="İletişim" data-en="Contact">İletişim</a></li>
+                </ul>
+            </nav>
+            <div class="language-switcher">
+                <span class="lang-label">TR</span>
+                <div class="lang-toggle" id="langToggle">
+                    <div class="lang-ball"></div>
+                </div>
+                <span class="lang-label">EN</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hakkımda -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 data-tr="Hakkımda" data-en="About Me">Hakkımda</h2>
+            <div style="display: flex; align-items: center; gap: 30px; flex-wrap: wrap;">
+                <img src="profile.jpg" alt="Ahmet Sezgin" style="width: 180px; height: 180px; object-fit: cover; border-radius: 50%; border: 4px solid #5a67d8;">
+                <p data-tr="Hasan Kalyoncu Üniversitesi'nde 4. sınıf Bilgisayar Mühendisliği öğrencisiyim. HKÜ Yazılım Topluluğu'nda başkan yardımcılığı yapıyorum. Yazılım geliştirme, yapay zeka uygulamaları, web teknolojileri ve grafik tasarım alanlarında aktif olarak çalışıyorum. Grafik tasarım bilgimi yazılım projelerinde kullanarak çok yönlü çözümler üretiyorum."
+                   data-en="I am a 4th-year Computer Engineering student at Hasan Kalyoncu University and vice president of the HKU Software Club. I actively work on software development, AI applications, web technologies, and graphic design, leveraging design skills in my coding projects.">
+                    Hasan Kalyoncu Üniversitesi'nde 4. sınıf Bilgisayar Mühendisliği öğrencisiyim. HKÜ Yazılım Topluluğu'nda başkan yardımcılığı yapıyorum. Yazılım geliştirme, yapay zeka uygulamaları, web teknolojileri ve grafik tasarım alanlarında aktif olarak çalışıyorum. Grafik tasarım bilgimi yazılım projelerinde kullanarak çok yönlü çözümler üretiyorum.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Yetenekler -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 data-tr="Yetenekler" data-en="Skills">Yetenekler</h2>
+            <ul>
+                <li data-tr="Programlama Dilleri: Python, C/C++, JavaScript, HTML, CSS, React, Next.js"
+                    data-en="Programming Languages: Python, C/C++, JavaScript, HTML, CSS, React, Next.js">
+                    Programlama Dilleri: Python, C/C++, JavaScript, HTML, CSS, React, Next.js
+                </li>
+                <li data-tr="Web Geliştirme: Frontend geliştirme, REST API entegrasyonu"
+                    data-en="Web Development: Frontend development, REST API integration">
+                    Web Geliştirme: Frontend geliştirme, REST API entegrasyonu
+                </li>
+                <li data-tr="Gömülü Sistemler: Assembly ile ADC, LCD, LED uygulamaları"
+                    data-en="Embedded Systems: ADC, LCD, LED applications with Assembly">
+                    Gömülü Sistemler: Assembly ile ADC, LCD, LED uygulamaları
+                </li>
+                <li data-tr="Makine Öğrenimi: PyTorch, OpenCV, NLP, Finetuning"
+                    data-en="Machine Learning: PyTorch, OpenCV, NLP, Finetuning">
+                    Makine Öğrenimi: PyTorch, OpenCV, NLP, Finetuning
+                </li>
+                <li data-tr="Oyun Geliştirme: Unity (Orta seviye), Unreal Engine (Temel-Orta seviye)"
+                    data-en="Game Development: Unity (Intermediate), Unreal Engine (Basic-Intermediate)">
+                    Oyun Geliştirme: Unity (Orta seviye), Unreal Engine (Temel-Orta seviye)
+                </li>
+                <li data-tr="Veritabanı: SQLite, MySQL"
+                    data-en="Database: SQLite, MySQL">
+                    Veritabanı: SQLite, MySQL
+                </li>
+                <li data-tr="Grafik Tasarım: Photoshop, JSX, otomasyon scriptleri"
+                    data-en="Graphic Design: Photoshop, JSX, automation scripts">
+                    Grafik Tasarım: Photoshop, JSX, otomasyon scriptleri
+                </li>
+                <li data-tr="Ofis Uygulamaları: Excel, Word, PowerPoint (Makrolar dahil)"
+                    data-en="Office Tools: Excel, Word, PowerPoint (with Macros)">
+                    Ofis Uygulamaları: Excel, Word, PowerPoint (Makrolar dahil)
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projeler -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 data-tr="Projeler" data-en="Projects">Projeler</h2>
+            <div class="projects-grid">
+                <!-- GitHub Projeleri -->
+                <div class="project-item">
+                    <h3 data-tr="Google Gemini Chatbot Arayüzü" data-en="Google Gemini Chatbot Interface">
+                        Google Gemini Chatbot Arayüzü
+                    </h3>
+                    <p data-tr="Google Gemini API ile etkileşim kurmak için Python tabanlı bir arayüz."
+                       data-en="A Python-based interface to interact with the Google Gemini API.">
+                        Google Gemini API ile etkileşim kurmak için Python tabanlı bir arayüz.
+                    </p>
+                    <a href="https://github.com/ahmetsezginn/google-gemini-chatbot-interface" target="_blank"
+                       data-tr="GitHub'da İncele" data-en="View on GitHub">
+                        GitHub'da İncele
+                    </a>
+                </div>
+                <div class="project-item">
+                    <h3 data-tr="Easy Pin Uploader" data-en="Easy Pin Uploader">
+                        Easy Pin Uploader
+                    </h3>
+                    <p data-tr="Pinterest için otomatik pin yükleyici ve zamanlayıcı uygulama."
+                       data-en="An automatic pin uploader and scheduler for Pinterest.">
+                        Pinterest için otomatik pin yükleyici ve zamanlayıcı uygulama.
+                    </p>
+                    <a href="https://github.com/ahmetsezginn/easy-pin-uploader" target="_blank"
+                       data-tr="GitHub'da İncele" data-en="View on GitHub">
+                        GitHub'da İncele
+                    </a>
+                </div>
+                <div class="project-item">
+                    <h3 data-tr="Shutterstock EPS Otomatik Kaydetme" data-en="Shutterstock EPS Auto-Saver">
+                        Shutterstock EPS Otomatik Kaydetme
+                    </h3>
+                    <p data-tr="Shutterstock için EPS dosyalarını otomatik kaydeden script."
+                       data-en="A script that automatically downloads EPS files from Shutterstock.">
+                        Shutterstock için EPS dosyalarını otomatik kaydeden script.
+                    </p>
+                    <a href="https://github.com/ahmetsezginn/Shutterstock-eps-automatic-save" target="_blank"
+                       data-tr="GitHub'da İncele" data-en="View on GitHub">
+                        GitHub'da İncele
+                    </a>
+                </div>
+                <div class="project-item">
+                    <h3 data-tr="PDF Yazıcı" data-en="PDF Printer">PDF Yazıcı</h3>
+                    <p data-tr="PDF dosyalarını yazdırmak için geliştirilmiş bir uygulama."
+                       data-en="An application developed to print PDF files.">
+                        PDF dosyalarını yazdırmak için geliştirilmiş bir uygulama.
+                    </p>
+                    <a href="https://github.com/ahmetsezginn/Pdf_printer" target="_blank"
+                       data-tr="GitHub'da İncele" data-en="View on GitHub">
+                        GitHub'da İncele
+                    </a>
+                </div>
+                <div class="project-item">
+                    <h3 data-tr="Photoshop Akıllı Nesne Değiştirici" data-en="Photoshop Smart-Object Replacer">
+                        Photoshop Akıllı Nesne Değiştirici
+                    </h3>
+                    <p data-tr="Photoshop API kullanarak akıllı nesneleri değiştiren script."
+                       data-en="A script that replaces smart objects via the Photoshop API.">
+                        Photoshop API kullanarak akıllı nesneleri değiştiren script.
+                    </p>
+                    <a href="https://github.com/ahmetsezginn/Replace-Smart-Object-Using-Photosho-Api" target="_blank"
+                       data-tr="GitHub'da İncele" data-en="View on GitHub">
+                        GitHub'da İncele
+                    </a>
+                </div>
+
+                <!-- CV Projeleri -->
+                <div class="project-item">
+                    <h3 data-tr="Scrabble Algoritması ve Uygulaması" data-en="Scrabble Algorithm & App">
+                        Scrabble Algoritması ve Uygulaması
+                    </h3>
+                    <p data-tr="Kelime puanlamasına dayalı Scrabble oyunu için algoritma geliştirilmesi ve kullanıcı arayüzü."
+                       data-en="Algorithm and UI for a Scrabble game based on word scoring.">
+                        Kelime puanlamasına dayalı Scrabble oyunu için algoritma geliştirilmesi ve kullanıcı arayüzü.
+                    </p>
+                </div>
+                <div class="project-item">
+                    <h3 data-tr="Işıkla Suyun Kirliliğini Ölçme" data-en="Measuring Water Pollution with Light">
+                        Işıkla Suyun Kirliliğini Ölçme
+                    </h3>
+                    <p data-tr="LDR yardımıyla suyun içinden geçen ışık sayesinse suyun temizliğini kontrol ediyor"
+                       data-en="It checks the cleanliness of the water thanks to the light passing through the water with the help of LDR.">
+                       LDR yardımıyla suyun içinden geçen ışık sayesinse suyun temizliğini kontrol ediyor
+                    </p>
+                </div>
+                <div class="project-item">
+                    <h3 data-tr="Otomatik Mockup Yapma Programı" data-en="Automatic Mockup Creator">
+                        Otomatik Mockup Yapma Programı
+                    </h3>
+                    <p data-tr="Photoshop otomasyonlarıyla tasarımları hızlı şekilde mockup’a dönüştüren araç."
+                       data-en="A tool that quickly converts designs into mockups using Photoshop automation.">
+                        Photoshop otomasyonlarıyla tasarımları hızlı şekilde mockup’a dönüştüren araç.
+                    </p>
+                </div>
+                <div class="project-item">
+                    <h3 data-tr="Excel'de Dosya İsimlerini Değiştirme" data-en="Excel Batch File Renamer">
+                        Excel'de Dosya İsimlerini Değiştirme
+                    </h3>
+                    <p data-tr="Excel dosyalarındaki verileri kullanarak otomatik dosya adı düzenleyici yazılım."
+                       data-en="A script that renames files in batch based on data from an Excel sheet.">
+                        Excel dosyalarındaki verileri kullanarak otomatik dosya adı düzenleyici yazılım.
+                    </p>
+                </div>
+                <div class="project-item">
+                    <h3 data-tr="Otomatik Hashtag ve Başlık Oluşturucu" data-en="Auto Hashtag & Title Generator">
+                        Otomatik Hashtag ve Başlık Oluşturucu
+                    </h3>
+                    <p data-tr="Sosyal medya gönderileri için otomatik hashtag ve başlık üreten metin işleme uygulaması."
+                       data-en="A text-processing app that auto-generates hashtags and titles for social posts.">
+                        Sosyal medya gönderileri için otomatik hashtag ve başlık üreten metin işleme uygulaması.
+                    </p>
+                </div>
+                <div class="project-item">
+                    <h3 data-tr="WordPress Kredi Bazlı İndirme Eklentisi" data-en="WP Credit-Based Download Plugin">
+                        WordPress Kredi Bazlı İndirme Eklentisi
+                    </h3>
+                    <p data-tr="WordPress'te üyelerin kredi ile içerik indirebildiği özel bir eklenti geliştirmesi."
+                       data-en="A custom plugin allowing members to download content using credits on WordPress.">
+                        WordPress'te üyelerin kredi ile içerik indirebildiği özel bir eklenti geliştirmesi.
+                    </p>
+                    <a href="https://github.com/ahmetsezginn/Credit-Base-System-Wp-Plugin" target="_blank"
+                       data-tr="GitHub'da İncele" data-en="View on GitHub">
+                        GitHub'da İncele
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- İletişim -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2 data-tr="İletişim" data-en="Contact">İletişim</h2>
+            <p>
+                <strong data-tr="CV:" data-en="CV:">CV:</strong>
+                <a
+                  id="cvLink"
+                  data-tr-href="Grey Clean CV Resume Photo_TR.pdf"
+                  data-en-href="Grey Clean CV Resume Photo_EN.pdf"
+                  href="Grey Clean CV Resume Photo_TR.pdf"
+                  target="_blank"
+                  data-tr="PDF olarak görüntüle"
+                  data-en="View as PDF"
+                >
+                  PDF olarak görüntüle
+                </a>
+              </p>
+            <p>
+                <strong data-tr="E-posta:" data-en="Email:">E-posta:</strong>
+                <a href="mailto:ahmet.sezgin@std.hku.edu.tr">ahmet.sezgin@std.hku.edu.tr</a>
+            </p>
+            <p>
+                <strong>GitHub:</strong>
+                <a href="https://github.com/ahmetsezginn" target="_blank">github.com/ahmetsezginn</a>
+            </p>
+            <p>
+                <strong>LinkedIn:</strong>
+                <a href="https://www.linkedin.com/in/ahmet-sezgin-9745a3259" target="_blank">linkedin.com/in/ahmet-sezgin</a>
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 <span data-tr="Tüm hakları saklıdır." data-en="All rights reserved.">Tüm hakları saklıdır.</span></p>
+        </div>
+    </footer>
+
+    <!-- Dil Geçişi Script'i -->
+    <script src="script.js"></script>
+</body>
+</html>
